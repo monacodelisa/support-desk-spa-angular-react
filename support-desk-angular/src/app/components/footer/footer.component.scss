@@ -1,0 +1,22 @@
+
+
+:host {
+  background-color: #43687a;
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+  width: 100%;
+}
+
+a {
+  text-align: center;
+  text-decoration: none;
+  font-family: 'Papyrus', sans-serif;
+  color:gray;
+
+  &:hover {
+    transform: scale(1.1);
+    transition: ease-in-out 0.3s;
+    color: #f4f4f4;
+  }
+}

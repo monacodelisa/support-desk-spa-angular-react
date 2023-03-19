@@ -1,5 +1,7 @@
-<ng-container *ngIf="searchCalled && (filteredUsers$ | async)?.length">
-  <mat-card *ngFor="let user of filteredUsers$ | async">
+<ng-container *ngIf="searchCalled && (filteredUsers$ | async)?.length;" >
+  <mat-card *ngFor="let user of filteredUsers$ | async; let i = index" [ngClass]="{ 'show-details': i === hoveredCardIndex }"
+  (mouseenter)="hoveredCardIndex = i"
+  (mouseleave)="hoveredCardIndex = null">
       <mat-card-title>
           <img [src]="user.image ? user.image : placehldrImg" alt="" />
           <mat-icon [svgIcon]="user.available ? 'available' : 'busy'"></mat-icon>
@@ -7,12 +9,16 @@
       <mat-card-content>
           <p class="name">{{ user.firstName }} {{ user.lastName }}</p>
           <p>{{ user.location }}</p>
+          <p *ngIf="i === hoveredCardIndex">{{ user.phone }}</p>
+          <p *ngIf="i === hoveredCardIndex">{{ user.email }}</p>
       </mat-card-content>
   </mat-card>
 </ng-container>
 
 <ng-container *ngIf="!searchCalled">
-  <mat-card *ngFor="let user of (users$ | async)">
+  <mat-card *ngFor="let user of (users$ | async); let i = index" [ngClass]="{ 'show-details': i === hoveredCardIndex }"
+  (mouseenter)="hoveredCardIndex = i"
+  (mouseleave)="hoveredCardIndex = null">
       <mat-card-title>
           <img [src]="user.image ? user.image : placehldrImg" alt="" />
           <mat-icon [svgIcon]="user.available ? 'available' : 'busy'"></mat-icon>
@@ -20,6 +26,8 @@
       <mat-card-content>
           <p class="name">{{ user.firstName }} {{ user.lastName }}</p>
           <p>{{ user.location }}</p>
+          <p *ngIf="i === hoveredCardIndex">{{ user.phone }}</p>
+          <p *ngIf="i === hoveredCardIndex">{{ user.email }}</p>
       </mat-card-content>
   </mat-card>
 </ng-container>

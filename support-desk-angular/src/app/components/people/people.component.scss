@@ -3,13 +3,27 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+    margin: 1rem 02rem;
   }
 
   mat-card {
     width: 20vw;
-    height: 35vh;
+    // height: 35vh;
     margin: 1rem;
     padding: 1rem;
+
+    &.show-details {
+      cursor: pointer;
+
+      mat-card-title {
+          height: 7.5rem;
+
+          img{
+            height: 6rem;
+          }
+      }
+
+    }
 
     mat-card-title {
       margin: 0;
@@ -33,9 +47,6 @@
     }
 
     mat-card-content {
-      &:hover {
-        cursor: pointer;
-      }
 
       .name {
         font-size: 1.2rem;;

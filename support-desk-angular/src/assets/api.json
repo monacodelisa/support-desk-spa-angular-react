@@ -1,9 +1,18 @@
 [
   {
+    "firstName": "Esther",
+    "lastName": "White",
+    "available": true,
+    "phone": "518 782 1495",
+    "email": "monacodelisa@gmail.com",
+    "image": "https://assets.codepen.io/4432512/internal/avatars/users/default.png?fit=crop&format=auto&height=512&version=1677343930&width=512",
+    "location": "New York, USA"
+  },
+  {
     "firstName": "Roderick",
     "lastName": "Schumm",
     "available": false,
-    "phone": "018 782       1495",
+    "phone": "018 782 1495",
     "email": "Roderick.Wuckert@releva.ai",
     "image": "https://images.unsplash.com/photo-1528660493888-ab6f4761e036?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1800&q=80",
     "location": "New York, USA"

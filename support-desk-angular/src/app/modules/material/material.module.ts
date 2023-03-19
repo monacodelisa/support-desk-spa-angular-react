@@ -19,6 +19,7 @@ import { DomSanitizer } from '@angular/platform-browser';
 })
 export class MaterialModule {
 
+  // custom icons integration
   constructor(matIconRegistry: MatIconRegistry, domSanitizer: DomSanitizer) {
     matIconRegistry.addSvgIcon('available', domSanitizer.bypassSecurityTrustResourceUrl('/../../assets/icon-available.svg'));
     matIconRegistry.addSvgIcon('busy', domSanitizer.bypassSecurityTrustResourceUrl('/../../assets/icon-busy.svg'));
