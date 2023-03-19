@@ -1,0 +1,17 @@
+:host {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+mat-card {
+  width: 20vw;
+  margin: 1rem;
+  padding: 1rem;
+}
+mat-card mat-card-content image-wrapper {
+  width: 17rem;
+  height: 10rem;
+  overflow: hidden;
+}

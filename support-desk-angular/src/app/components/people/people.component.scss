@@ -1,0 +1,44 @@
+  :host {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+
+  mat-card {
+    width: 20vw;
+    height: 35vh;
+    margin: 1rem;
+    padding: 1rem;
+
+    mat-card-title {
+      margin: 0;
+      padding: 0;
+      height: 11.5rem;
+
+        img {
+          width: 100%;
+          height: 10rem;
+          object-fit: cover;
+          overflow: hidden;
+        }
+
+        mat-icon {
+          position: relative;
+          bottom: 4rem;
+          left: 80%;
+          height: 3rem;
+          width: 3rem;
+        }
+    }
+
+    mat-card-content {
+      &:hover {
+        cursor: pointer;
+      }
+
+      .name {
+        font-size: 1.2rem;;
+      }
+    }
+  }
