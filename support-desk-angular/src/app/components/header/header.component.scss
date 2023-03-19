@@ -3,6 +3,10 @@ mat-toolbar {
   justify-content: space-between;
   padding: 1rem 6rem 1rem 7rem;
 
+  @media (max-width: 575px) {
+    padding: 0 0 0 1rem;
+  }
+
   form {
     display: flex;
 

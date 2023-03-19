@@ -1,7 +1,7 @@
 <mat-toolbar color="primary">
 	<div class="logo"><h1>Support Desk</h1></div>
 	<form>
-		<input [(ngModel)]="searchTerm" name="searchTerm" placeholder="Search" />
+		<input [(ngModel)]="searchTerm" name="searchTerm" placeholder="Search" (keyup.enter)="search()"/>
 		<mat-icon svgIcon="search" (click)="search()"></mat-icon>
 	</form>
 </mat-toolbar>
