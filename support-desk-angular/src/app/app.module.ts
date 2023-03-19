@@ -12,7 +12,7 @@ import { PeopleComponent } from './components/people/people.component';
   declarations: [
     AppComponent,
     HeaderComponent,
-    PeopleComponent
+    PeopleComponent,
   ],
   imports: [
     BrowserModule,

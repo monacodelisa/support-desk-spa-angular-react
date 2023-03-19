@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Observable, of } from 'rxjs';
 import { User } from 'src/app/models/user';
 import { PeopleService } from 'src/app/services/people.service';
 
@@ -9,16 +10,33 @@ import { PeopleService } from 'src/app/services/people.service';
   styleUrls: ['./people.component.scss']
 })
 export class PeopleComponent implements OnInit {
-  users: User[] = [];
-  available = "../../../assets/icon-available.svg"
-  busy = "../../../assets/icon-busy.svg"
+
+  placehldrImg = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNfVmXySPJQ-xv4oY0in48YpkLIA8_yyj95p6uLW53EqTBBQAESYi68ElFFzo6dvmERXc&usqp=CAU"
+
+
+  searchTerm = '';
+
+  users$: Observable<User[]> = of([]);
+  filteredUsers$: Observable<User[]> = of([]);
+  searchCalled: boolean = false;
 
   constructor(private peopleService: PeopleService) {}
 
   ngOnInit() {
+    this.users$ = this.peopleService.users$;
+    this.filteredUsers$ = this.peopleService.filteredUsers$;
+    this.peopleService.searchCalled$.subscribe(searchCalled => {
+      this.searchCalled = searchCalled;
+    });
     this.peopleService.getUsers().subscribe(users => {
-      this.users = users;
-      console.log(this.users);
+      this.peopleService.usersSource.next(users);
     });
   }
+
+  onFilter() {
+    this.peopleService.filterUsers(this.searchTerm);
+    console.log(this.filteredUsers$)
+  }
 }
+
+

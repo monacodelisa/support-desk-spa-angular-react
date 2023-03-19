@@ -1,10 +1,25 @@
-<mat-card *ngFor="let user of users">
-	<mat-card-title>
-		<img src="{{ user.image }}" alt="" />
-    <mat-icon [svgIcon]="user.available ? 'available' : 'busy'"></mat-icon>
-	</mat-card-title>
-	<mat-card-content>
-		<p class="name">{{ user.firstName }} {{ user.lastName }}</p>
-		<p>{{ user.location }}</p>
-	</mat-card-content>
-</mat-card>
+<ng-container *ngIf="searchCalled && (filteredUsers$ | async)?.length">
+  <mat-card *ngFor="let user of filteredUsers$ | async">
+      <mat-card-title>
+          <img [src]="user.image ? user.image : placehldrImg" alt="" />
+          <mat-icon [svgIcon]="user.available ? 'available' : 'busy'"></mat-icon>
+      </mat-card-title>
+      <mat-card-content>
+          <p class="name">{{ user.firstName }} {{ user.lastName }}</p>
+          <p>{{ user.location }}</p>
+      </mat-card-content>
+  </mat-card>
+</ng-container>
+
+<ng-container *ngIf="!searchCalled">
+  <mat-card *ngFor="let user of (users$ | async)">
+      <mat-card-title>
+          <img [src]="user.image ? user.image : placehldrImg" alt="" />
+          <mat-icon [svgIcon]="user.available ? 'available' : 'busy'"></mat-icon>
+      </mat-card-title>
+      <mat-card-content>
+          <p class="name">{{ user.firstName }} {{ user.lastName }}</p>
+          <p>{{ user.location }}</p>
+      </mat-card-content>
+  </mat-card>
+</ng-container>

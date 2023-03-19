@@ -1,7 +1,3 @@
-export interface ApiResponse {
-  users: User[];
-}
-
 export interface User {
   "firstName": string,
   "lastName": string,

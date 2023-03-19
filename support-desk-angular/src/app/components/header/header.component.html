@@ -1,10 +1,7 @@
 <mat-toolbar color="primary">
-  <div class="logo"><h1>Support Desk</h1></div>
-  <form>
-      <input placeholder="Search">
-      <button mat-icon-button aria-label="search">
-        <mat-icon>search</mat-icon>
-      </button>
-  </form>
+	<div class="logo"><h1>Support Desk</h1></div>
+	<form>
+		<input [(ngModel)]="searchTerm" name="searchTerm" placeholder="Search" />
+		<mat-icon svgIcon="search" (click)="search()"></mat-icon>
+	</form>
 </mat-toolbar>
-

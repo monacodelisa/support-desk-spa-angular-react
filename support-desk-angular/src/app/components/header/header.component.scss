@@ -9,9 +9,13 @@ mat-toolbar {
 
     input {
       padding: 0.5rem;
+    }
 
-      button {
-      }
+    mat-icon {
+      position: relative;
+      right: 1.7rem;
+      top: 0.5rem;
+      cursor: pointer;
     }
   }
 }

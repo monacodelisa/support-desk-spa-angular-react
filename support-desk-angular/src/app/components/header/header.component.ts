@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
-import { MatToolbar } from '@angular/material/toolbar';
-import { MatFormField } from '@angular/material/form-field';
-import { MatInput } from '@angular/material/input';
+import { User } from 'src/app/models/user';
+import { PeopleService } from 'src/app/services/people.service';
 
 @Component({
   selector: 'app-header',
@@ -9,5 +8,12 @@ import { MatInput } from '@angular/material/input';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent {
+  searchTerm = "";
+  users: User[] = [];
 
+  constructor(private peopleService: PeopleService) {}
+
+  search() {
+    this.peopleService.filterUsers(this.searchTerm);
+  }
 }
