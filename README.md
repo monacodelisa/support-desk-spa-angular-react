@@ -1,7 +1,8 @@
-# Support-Desk-SPA-Releva
+# Support-Desk-SPA-Angular
 
+# Support-Desk-SPA-React
 
-## Support Desk task
+## Support Desk Task Instructions
 
 ## Task
 

@@ -1,0 +1,28 @@
+.header {
+    color: #fff;
+
+    .MuiToolbar-root{
+      width: 80vw;
+      justify-content: space-between;
+      margin: auto;
+
+      .MuiBox-root {
+        display: flex;
+        flex-direction: row-reverse;
+
+        .MuiSvgIcon-root {
+          position: relative;
+          top: 0.2rem;
+          right: 2rem;
+          color: #333;
+          cursor: pointer;
+          z-index: 1;
+        }
+
+        .MuiInputBase-root {
+          background-color: #fff;
+          padding-left: 0.5rem;
+        }
+      }
+    }
+  }
