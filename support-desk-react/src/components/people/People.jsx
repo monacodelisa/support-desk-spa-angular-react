@@ -7,15 +7,12 @@ import "./People.scss";
 
 
 function People() {
-    const [hoveredPerson, setHoveredPerson] = useState(null);
-
+    const [isHovered, setIsHovered] = useState(false);
     return (
       <div className="people">
-        {data.map((person) => (
-          <Card key={person.id}
-          onMouseEnter={() => setHoveredPerson(person)}
-          onMouseLeave={() => setHoveredPerson(null)}
-          >
+        {data.map((person, index) => (
+          <Card key={index}
+          onMouseEnter={() => setIsHovered(index)} onMouseLeave={() => setIsHovered(null)}>
             <CardContent>
               <div className='card-heading'>
               {person.image ? (
@@ -33,10 +30,10 @@ function People() {
                   {person.firstName} {person.lastName}
                 </Typography>
               <Typography color='textSecondary'>{person.location}</Typography>
-              {hoveredPerson && hoveredPerson.id === person.id && (
+              {isHovered === index && (
               <div>
-                <Typography color="textSecondary">{person.phone}</Typography>
-                <Typography color="textSecondary">{person.email}</Typography>
+                <Typography className='details' color="textSecondary">{person.phone}</Typography>
+                <Typography className='details' color="textSecondary">{person.email}</Typography>
               </div>
             )}
             </CardContent>
@@ -45,32 +42,5 @@ function People() {
       </div>
     );
   }
-
-// function PersonCard(props) {
-// 	const { firstName, lastName, image, location } = props.person;
-// 	return (
-// 		<Card>
-// 			<CardContent>
-// 				<div className='card-heading'>
-// 					<img src={image} alt={image} />
-// 					<Typography variant='h5' component='h2'>
-// 						{firstName} {lastName}
-// 					</Typography>
-// 				</div>
-// 				<Typography color='textSecondary'>{location}</Typography>
-// 			</CardContent>
-// 		</Card>
-// 	);
-// }
-
-// function People() {
-// 	return (
-// 		<div className='people'>
-// 			{data.map((person) => (
-// 				<PersonCard key={person.id} person={person} />
-// 			))}
-// 		</div>
-// 	);
-// }
 
 export default People;
