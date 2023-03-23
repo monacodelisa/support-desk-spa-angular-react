@@ -1,6 +1,6 @@
-# Support-Desk-SPA-Angular
+# [Support-Desk-SPA-Angular](https://github.com/monacodelisa/support-desk-spa-releva/tree/main/support-desk-angular)
 
-# Support-Desk-SPA-React
+# [Support-Desk-SPA-React](https://github.com/monacodelisa/support-desk-spa-releva/tree/main/support-desk-react)
 
 ## Support Desk Task Instructions
 
