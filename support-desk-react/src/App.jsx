@@ -1,4 +1,3 @@
-// import logo from './logo.svg';
 import React, { useState } from 'react';
 import Header from './components/header/Header'
 import People from './components/people/People'
