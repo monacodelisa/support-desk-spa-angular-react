@@ -4,7 +4,7 @@
     "lastName": "Schumm",
     "available": false,
     "phone": "018 782       1495",
-    "email": "Roderick.Wuckert@releva.ai",
+    "email": "Roderick.Wuckert@sample.email",
     "image": "https://images.unsplash.com/photo-1528660493888-ab6f4761e036?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1800&q=80",
     "location": "New York, USA"
   },
@@ -13,7 +13,7 @@
     "lastName": "Gaylord",
     "available": false,
     "phone": "018-048-3678",
-    "email": "Efrain.Hickle84@releva.ai",
+    "email": "Efrain.Hickle84@sample.email",
     "image": "https://images.unsplash.com/photo-1528660493888-ab6f4761e036?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1800&q=80",
     "location": "New York, USA"
   },
@@ -22,7 +22,7 @@
     "lastName": "Lowe",
     "available": false,
     "phone": "729-075.2127",
-    "email": "Kimberly_Orn_long_address@releva.ai",
+    "email": "Kimberly_Orn_long_address@sample.email",
     "image": "https://images.unsplash.com/photo-1485217988980-11786ced9454?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1800&q=80",
     "location": "Sidney, Australia"
   },
@@ -31,7 +31,7 @@
     "lastName": "Fritsch",
     "available": true,
     "phone": "768  .224  .6685",
-    "email": "Delfina.Deckow@releva.ai",
+    "email": "Delfina.Deckow@sample.email",
     "image": "https://images.unsplash.com/photo-1485217988980-11786ced9454?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1800&q=80",
     "location": ""
   },
@@ -40,7 +40,7 @@
     "lastName": "",
     "available": true,
     "phone": "913-062 -5749",
-    "email": "Natalia10@releva.ai",
+    "email": "Natalia10@sample.email",
     "image": "https://images.unsplash.com/photo-1485217988980-11786ced9454?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1800&q=80",
     "location": "Sofia, Bulgaria"
   },
@@ -49,7 +49,7 @@
     "lastName": "Schroeder",
     "available": true,
     "phone": "+359 496 2656",
-    "email": "Verla0@releva.ai",
+    "email": "Verla0@sample.email",
     "image": "https://images.unsplash.com/photo-1485217988980-11786ced9454?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1800&q=80",
     "location": "Denmark"
   },
@@ -58,7 +58,7 @@
     "lastName": "Crona",
     "available": true,
     "phone": "(740) 703-2676",
-    "email": "Trent.Powlowski50@releva.ai",
+    "email": "Trent.Powlowski50@sample.email",
     "image": "",
     "location": ""
   },
@@ -67,7 +67,7 @@
     "lastName": "Krajcik-Smith Junior",
     "available": false,
     "phone": ".100.578.2952",
-    "email": "Jess.Krajcik@releva.ai",
+    "email": "Jess.Krajcik@sample.email",
     "image": "https://images.unsplash.com/photo-1528660493888-ab6f4761e036?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1800&q=80",
     "location": "Madrid, Spain"
   },
@@ -76,7 +76,7 @@
     "lastName": "Williamson",
     "available": false,
     "phone": "266.780.0162",
-    "email": "Allan55@releva.ai",
+    "email": "Allan55@sample.email",
     "image": "https://images.unsplash.com/photo-1528660493888-ab6f4761e036?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1800&q=80",
     "location": "København, Denmark"
   },
@@ -85,7 +85,7 @@
     "lastName": "Bednar",
     "available": false,
     "phone": "(476) 512-3146",
-    "email": "Jordy.Spencer66@releva.ai",
+    "email": "Jordy.Spencer66@sample.email",
     "image": "https://images.unsplash.com/photo-1528660493888-ab6f4761e036?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1800&q=80",
     "location": "Llanfairpwllgwyngyll, Wales"
   },
@@ -94,7 +94,7 @@
     "lastName": "Brakus",
     "available": true,
     "phone": "362.166.4076",
-    "email": "Dagmar-Grant-longest-via-support-email-address@releva.ai",
+    "email": "Dagmar-Grant-longest-via-support-email-address@sample.email",
     "image": "https://images.unsplash.com/photo-1528660493888-ab6f4761e036?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1800&q=80",
     "location": "Serbia"
   },
@@ -103,14 +103,14 @@
     "lastName": "Little",
     "available": false,
     "phone": "791 .891 .8925",
-    "email": "marilie.tremblay@releva.ai  "
+    "email": "marilie.tremblay@sample.email  "
   },
   {
     "firstName": "Rylan",
     "lastName": "Tromp",
     "available": false,
     "phone": "481-897-4439",
-    "email": "Rylan_Legros@releva.ai",
+    "email": "Rylan_Legros@sample.email",
     "image": "https://images.unsplash.com/photo-1528660493888-ab6f4761e036?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1800&q=80",
     "location": "Reykjanesbær, Iceland"
   }
